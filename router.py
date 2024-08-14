@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends
-from schemas import STaskAdd, STaskGet
+from schemas import STaskAdd
 from typing import Optional, Annotated
 from repository import TaskRepository
 

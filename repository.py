@@ -19,4 +19,5 @@ class TaskRepository():
         async with new_session() as session:
             query = select(TaskOrm)
             result = await session.execute(query)
-            task_models = result.all()
+            task_models = result.scalars().all()
+            return task_models
