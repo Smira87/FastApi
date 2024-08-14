@@ -1,5 +1,5 @@
 from database import new_session, TaskOrm
-from main import STaskAdd
+from schemas import STaskAdd
 from sqlalchemy import select
 
 class TaskRepository():
